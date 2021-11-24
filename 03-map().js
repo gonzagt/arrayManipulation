@@ -1,6 +1,6 @@
 // Método map() - INMUTABLE
 
-// El método map sirve para "transformar" los elementos de un array.
+// El método map() sirve para "transformar" los elementos de un array.
 
 const letters = ['a', 'b', 'c'];
 const lettersB = [];
@@ -19,6 +19,7 @@ console.log(lettersC); // resultado esperado: ['aa', 'bb', 'cc']
 /* Este método siempre va a arrojar, luego de su implementación, la misma cantidad
 de elementos que el array original, ni más ni menos. */
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // map() y Objetos
 
@@ -46,15 +47,15 @@ const datos = [
         nombre: 'Valentín',
         edad: 18
     }
-]
+];
 
 /*    const datos2 = datos.map(dato => {
         dato.pariente = 'sí';
         return dato;
     });
 
-    console.log(datos);
-    console.log(datos2); */
+    console.log('original',datos);
+    console.log('agregado',datos2); */
 
 /* Al ejecutar este pedazo de código (datos2 y console.log's), nos damos cuenta 
 que nuestro array original se ve modificado. Pero esto no quiere decir que el método map() 
@@ -77,5 +78,7 @@ const datos3 = datos.map(dato => {
 método map() crearemos un nuevo array, con objetos que hacen referencia al mismo espacio en
 memoria que el array 'datos', y le agregaremos a cada uno la propiedad 'parientes'. */
 
-console.log(datos);
-console.log(datos3);
+console.log('original',datos);
+console.log('agregado',datos3);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
